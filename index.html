@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joc Medieval cu Pitici</title>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css"> <!-- Legătura către fișierul CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Aventura Piticilor Medievali</h1>
+        <p>Alătură-te unui grup de pitici curajoși într-o aventură plină de magie și mister!</p>
+    </header>
+
+    <!-- Descriere joc -->
+    <div class="game-description">
+        <h2>Povestea jocului</h2>
+        <p>Într-un regat medieval uitat de timp, piticii trăiesc în subteran, unde magia și pericolele sunt la fiecare pas. Înscrie-te în aventura noastră și ajută-i să înfrunte dragoni, să descopere comori și să salveze regatul de o forță malefică! Ești gata pentru această provocare?    </div>
+
+    <!-- Formular de logare -->
+    <div class="login-form">
+        <h2>Loghează-te pentru a începe aventura!</h2>
+        <form action="login-process.php" method="POST">
+            <input type="text" name="username" placeholder="Nume utilizator" required>
+            <input type="password" name="password" placeholder="Parolă" required>
+            <input type="submit" value="Loghează-te">
+            <button type="button" class="popup-button" id="open-register-popup">Deschide înregistrarea</button>
+        </form>
+    </div>
+
+    <!-- Pop-up pentru înregistrare -->
+    <div id="register-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" id="close-register-popup">&times;</span>
+            <h2>Crează-ți un cont!</h2>
+            <form action="register-process.php" method="POST">
+                <input type="text" name="username" placeholder="Nume utilizator" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Parolă" required>
+                <input type="password" name="confirm_password" placeholder="Confirmă parola" required>
+                <button type="submit">Înregistrează-te</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Joc Medieval cu Pitici. Toate drepturile rezervate.</p>
+        <p>
+            Urmărește-ne pe:
+            <a href="https://facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://twitter.com" target="_blank">Twitter</a> | 
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="script1.js"></script> <!-- Legătura către fișierul JS -->
+</body>
+</html>

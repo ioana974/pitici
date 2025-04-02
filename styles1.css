@@ -1,0 +1,215 @@
+﻿/* Resetare margini și padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: url(https://assets.onecompiler.app/438yxzmdc/43d2ysdhw/DALL%C2%B7E%202025-03-27%2016.31.46%20-%20A%20medieval%20fantasy%20map%20of%20a%20mountainous%20dwarf%20kingdom.%20The%20map%20features%20towering%20mountains,%20fortified%20dwarf%20strongholds,%20deep%20mines,%20and%20winding%20roads.webp) no-repeat center center/cover;
+    padding: 50px 0;
+    text-align: center;
+    color: #c72c48; 
+}
+header h1 {
+    font-family: 'MedievalSharp', sans-serif;
+    font-size: 4rem;
+    color: #ffffff; /* Alb clar */
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.9), 0 0 15px #ffcc00; /* Contur galben mai pronunțat */
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ffffff; /* Alb clar */
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.9), 0 0 10px #ffcc00; /* Contur galben mai pronunțat */
+}
+/* Slider */
+.slider {
+    display: flex;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 1200px;
+    justify-content: center;
+}
+.slider img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+.slider img:hover {
+    transform: scale(1.1);
+}
+
+/* Secțiune de descriere */
+.game-description {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333;
+}
+.game-description h2 {
+    font-family: 'MedievalSharp', sans-serif;
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+.game-description p {
+    font-size: 1.1rem;
+    color: #ddd;
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+/* Formularele de logare */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #444;
+}
+.login-form input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+.login-form input[type="submit"] {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login-form input[type="submit"]:hover {
+    background-color: #e6b800;
+}
+/* Pop-up */
+.popup {
+    display: none; /* Ascuns în mod implicit */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundal semi-transparent */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Stil pentru butonul de deschidere a înregistrării */
+.popup-button {
+    background-color: transparent; /* Fără fundal */
+    color: #ffcc00; /* Galben */
+    border: none; /* Fără margine */
+    font-size: 1rem;
+    cursor: pointer
+.close-popup {
+    color: #
+
+
+/* Buton Joacă acum */
+.play-button {
+    text-align: center;
+    margin: 40px;
+}
+.play-button a {
+    background-color: #ffcc00;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.play-button a:hover {
+    background-color: #e6b800;
+}
+/* Formularele de înregistrare */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #444;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.register-form h2 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.register-form input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.register-form input[type="submit"] {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form input[type="submit"]:hover {
+    background-color: #e
+
+/* Footer */
+footer {
+    background-color: #222;
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+}
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 15px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivitate */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    .game-description h2 {
+        font-size: 2rem;
+    }
+    .slider img {
+        max-height: 300px;
+    }
+}
